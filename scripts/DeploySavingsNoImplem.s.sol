@@ -26,7 +26,7 @@ contract DeploySavingsNoImplem is Utils {
         // TODO: make sure that deployer has a 1 stablecoin (=1e18) balance
         // TODO: change the chainId
         uint256 chainId = CHAIN_SOURCE;
-        uint256 deployerPrivateKey = vm.deriveKey(vm.envString("MNEMONIC_MAINNET"), "m/44'/60'/0'/0/", 0);
+        uint256 deployerPrivateKey = vm.deriveKey(vm.envString("MNEMONIC_FUJI"), "m/44'/60'/0'/0/", 0);
         ImmutableCreate2Factory create2Factory = ImmutableCreate2Factory(IMMUTABLE_CREATE2_FACTORY_ADDRESS);
         string memory jsonVanity = vm.readFile(JSON_VANITY_PATH);
         bytes32 salt = jsonVanity.readBytes32(string.concat("$.", "salt"));
