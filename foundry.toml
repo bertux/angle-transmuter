@@ -9,14 +9,14 @@ gas_reports = ["*"]
 via_ir = true
 sizes = true
 optimizer = true
-optimizer_runs=1000
+optimizer_runs = 1000
 solc_version = '0.8.23'
 ffi = true
-fs_permissions = [ 
- { access = "read-write", path = "./scripts/selectors.json"},
- { access = "read-write", path = "./scripts/selectors_replace.json"}, 
- { access = "read-write", path = "./scripts/selectors_add.json"}, 
- { access = "read-write", path = "./scripts/vanity.json"}
+fs_permissions = [
+    { access = "read-write", path = "./scripts/selectors.json" },
+    { access = "read-write", path = "./scripts/selectors_replace.json" },
+    { access = "read-write", path = "./scripts/selectors_add.json" },
+    { access = "read-write", path = "./scripts/vanity.json" },
 ]
 memory_limit = 1000043554432
 
@@ -35,6 +35,7 @@ optimism = "${ETH_NODE_URI_OPTIMISM}"
 polygon = "${ETH_NODE_URI_POLYGON}"
 fork = "${ETH_NODE_URI_FORK}"
 avalanche = "${ETH_NODE_URI_AVALANCHE}"
+fuji = "${ETH_NODE_URI_FUJI}"
 celo = "${ETH_NODE_URI_CELO}"
 polygonzkevm = "${ETH_NODE_URI_POLYGONZKEVM}"
 bsc = "${ETH_NODE_URI_BSC}"
